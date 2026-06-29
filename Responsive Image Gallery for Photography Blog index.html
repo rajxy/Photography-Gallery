@@ -1,0 +1,76 @@
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Photography Gallery</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>Photography Blog</h1>
+
+<div class="gallery">
+
+<div class="photo">
+<img src="images/p1.jpg">
+</div>
+
+<div class="photo">
+<img src="images/p2.jpg">
+</div>
+
+<div class="photo">
+<img src="images/p3.jpg">
+</div>
+
+<div class="photo">
+<img src="images/p4.jpg">
+</div>
+
+<div class="photo">
+<img src="images/p5.jpg">
+</div>
+
+<div class="photo">
+<img src="images/p6.jpg">
+</div>
+
+</div>
+
+</body>
+</html>
+style.css
+body{
+
+font-family:Arial;
+background:#f2f2f2;
+margin:20px;
+text-align:center;
+
+}
+
+.gallery{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-gap:20px;
+
+}
+
+.photo img{
+
+width:100%;
+height:220px;
+border-radius:8px;
+transition:0.5s;
+
+}
+
+.photo img:hover{
+
+transform:scale(1.08);
+
+}
